@@ -1,17 +1,17 @@
 {
     "name": "shen-types",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
     "files": [
-        "dist/" 
-      ],
+        "dist/"
+    ],
     "exports": {
-      ".": {
-        "import": "./dist/index.mjs",
-        "require": "./dist/index.js"
-      }
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        }
     },
     "scripts": {
         "prettier": "prettier --check .",
@@ -39,11 +39,13 @@
         "tsconfig-paths": "^4.2.0",
         "tsx": "^4.19.2",
         "typescript": "^5.7.2",
-        "typescript-eslint": "^8.16.0",
-        "sn-types-general": "^1.0.7",
-        "sn-types-backend": "^1.1.4"
+        "typescript-eslint": "^8.16.0"
     },
     "overrides": {
         "eslint": "^9.15.0"
+    },
+    "dependencies": {
+        "sn-types-backend": "^1.1.4",
+        "sn-types-general": "^1.0.7"
     }
 }
